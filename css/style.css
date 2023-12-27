@@ -13,9 +13,10 @@
 
 :root {
     --bgcolor-color: #a9a9a9;
-    --second-bg-color: #f1f1f1;
+    --second-bg-color: #e0e0e0;
     --text-color: #000000;
     --main-color: rgb(0, 0, 0);
+    --text-color2: rgb(255, 255, 255);
 }
 
 html {
@@ -143,26 +144,10 @@ section {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .1rem;
-    color: var(--bgcolor-color);
+    color: var(--text-color2);
     z-index: 1;
     overflow: hidden;
     transition: 5s;
-}
-
-.btn-box .btn:hover {
-    color: var(--main-color);
-}
-
-.btn-box .btn:nth-child(2) {
-    background: transparent;
-    color: var(--main-color);
-} 
-
-.btn-box .btn:nth-child(2):hover{
-    color: var(--bgcolor-color);
-}
-.btn-box .btn:nth-child(2)::before {
-    background: var(--main-color);
 }
 
 .btn-box .btn::before {
